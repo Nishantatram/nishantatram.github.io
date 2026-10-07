@@ -233,7 +233,7 @@ const SKILLS={
  "Cloud & Deployment":["GitHub Pages","Vercel","REST API Deployment","Web Hosting","Basic Cloud Computing"],
  "Computer Science":["Data Structures & Algorithms","Object-Oriented Programming","Computer Networks","Database Systems","Software Engineering","Theory of Computation"]
 };
-const LEARNING=["Advanced Python","Data Structures & Algorithms","Machine Learning","Deep Learning","Generative AI","LLM applications","RAG systems","Backend development","Full-stack development","Software engineering","System design fundamentals","Git/GitHub","Problem solving","Cloud Computing & Deployment"];
+const LEARNING=["Advanced Python","Data Structures & Algorithms","Machine Learning","Deep Learning","Generative AI","LLM applications","RAG systems","Backend development","Full-stack development","Software engineering","System design fundamentals","Git/GitHub","Problem solving"];
 const INTERESTS=[
  ["Artificial Intelligence","Building practical intelligent systems."],
  ["Machine Learning","Learning models, data processing and predictive systems."],
@@ -241,7 +241,6 @@ const INTERESTS=[
  ["Software Engineering","Building maintainable and scalable applications."],
  ["Data","Data processing, databases, analytics and machine learning pipelines."],
  ["Computer Science","Algorithms, networks, databases, theory and programming fundamentals."]
- ["Cloud Computing","Exploring cloud platforms, hosting and deploying applications online."]
 ];
 /* status: "Project" or "Concept" (concepts are labelled as not implemented). filters: AI/ML, Software, Web, Data, Computer Vision */
 const PROJECTS=[
@@ -255,11 +254,22 @@ const PROJECTS=[
   problem:"Fraudulent transactions are rare and easy to miss. FraudNet classifies transactions and highlights suspicious ones.",
   tech:["Python","Machine Learning","Pandas","NumPy","Scikit-learn","Data visualization"],dataset:"PaySim",
   features:["Transaction analysis","Fraud classification","Feature engineering","ML prediction","Suspicious transaction detection","Risk scoring"]},
-  {name:"Face Detection",title:"Face Detection — Real-Time Face Detection System",cat:"AI / Computer Vision",featured:false,status:"Project",filters:["AI/ML","Computer Vision"],
+  {
+  name:"Face Detection",
+  title:"Face Detection — Real-Time Face Detection System",
+  cat:"AI / Computer Vision",
+  status:"Project",
+  filters:["AI/ML","Computer Vision"],
   desc:"A real-time computer vision system that detects human faces using a camera.",
   problem:"Automatically detecting faces can be useful for security, monitoring and human-computer interaction.",
-  tech:["Python","OpenCV","Computer Vision","Machine Learning"],
-  features:["Real-time camera input","Face detection","Multiple face detection","Face bounding boxes"]},
+  tech:["Python","OpenCV","Computer Vision"],
+  features:[
+    "Real-time camera input",
+    "Face detection",
+    "Multiple face detection",
+    "Face bounding boxes"
+  ]
+},
  {name:"SignSpeak",title:"SignSpeak — Real-Time Sign Language Translator",cat:"AI / Computer Vision",featured:true,status:"Project",filters:["AI/ML","Computer Vision"],
   desc:"Recognizes sign language gestures from a camera and shows them as text.",
   problem:"Communication between signers and non-signers is hard without an interpreter. SignSpeak turns gestures into readable text.",
